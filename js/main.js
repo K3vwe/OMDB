@@ -6,6 +6,7 @@ $('document').ready(() => {
         getMovies(searchText);
     });
 });
+
 const apikey = 'Api Key';
 function getMovies(searchText){
     axios.get('http://www.omdbapi.com?apikey='+apikey+'&s='+searchText)
